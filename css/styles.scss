@@ -1,0 +1,65 @@
+main {
+	width: 300px;
+	margin: 0 auto;
+	#main {
+		width: 300px;
+		height: 200px;
+		vertical-align: bottom;
+		margin-bottom: 8px;
+	}
+
+	nav {
+		margin-bottom: 8px;
+
+		ul {
+			display: flex;
+			justify-content: space-between;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			li {
+				border: 1px solid #ddd;
+				border-radius: 4px;
+				font-size: 12px;
+				padding: 4px;
+				text-align: center;
+				cursor: pointer;
+				user-select: none;
+				&:hover {
+					background-color: #f8f8f8;
+				}
+			}
+			#play {
+				width: 140px;
+			}
+			#prev {
+				width: 60px;
+			}
+			#next {
+				width: 60px;
+			}
+		}
+	}
+	.thumbnails {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: grid;
+		grid-template-columns: repeat(5, 56px);
+		gap: 5px;
+		li {
+			cursor: pointer;
+			opacity: 0.4;
+			&:hover {
+				opacity: 1;
+			}
+			&.current {
+				opacity: 1;
+			}
+			img {
+				width: 56px;
+				vertical-align: bottom;
+			}
+		}
+	}
+}
