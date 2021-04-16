@@ -84,5 +84,4 @@ play.addEventListener('click', () => {
 		play.textContent = 'Play';
 	}
 	isPlaying = !isPlaying;
-	console.log(isPlaying);
 });
